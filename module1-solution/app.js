@@ -14,13 +14,12 @@ function LunchCheckController($scope) {
 
     if($scope.listOfLunch)
     {
-
       var splittedLunch = ($scope.listOfLunch).split(',');
       if(splittedLunch.length <= 3)
       {
-        $scope.result = 'it is Ok';
+        $scope.result = 'Enjoy!';
       } else {
-        $scope.result = 'Too much';
+        $scope.result = 'Too much!';
       }
     } else {
       $scope.result = "Please enter data first";
